@@ -4,41 +4,64 @@ import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const quickLinks = [
+    { label: 'Home', href: '#home' },
+    { label: 'About', href: '#about' },
+    { label: 'Services', href: '#services' },
+    { label: 'Testimonials', href: '#testimonials' },
+    { label: 'Contact', href: '#contact' }
+  ];
+
+  const courses = [
+    'Manual Testing',
+    'Automation Testing',
+    'JIRA Training',
+    'Selenium with Java',
+    'Corporate Training'
+  ];
+
+  const socials = [
+    { icon: Facebook, href: '#', label: 'Facebook' },
+    { icon: Twitter, href: '#', label: 'Twitter' },
+    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Instagram, href: '#', label: 'Instagram' }
+  ];
+
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gradient-to-br from-gray-900 to-purple-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">TechyGuru Academy</h3>
-            <p className="text-gray-400">
+            <h3 className="text-2xl font-bold mb-6">TechyGuru Academy</h3>
+            <p className="text-gray-300 leading-relaxed text-lg">
               Empowering the next generation of software testing professionals through
               comprehensive training and hands-on experience.
             </p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              {['Home', 'About', 'Services', 'Testimonials', 'Contact'].map((link) => (
-                <li key={link}>
-                  <a href={`#${link.toLowerCase()}`} className="text-gray-400 hover:text-white transition-colors">
-                    {link}
+            <h4 className="text-xl font-semibold mb-6">Quick Links</h4>
+            <ul className="space-y-4">
+              {quickLinks.map((link, index) => (
+                <li key={index}>
+                  <a 
+                    href={link.href}
+                    className="text-gray-300 hover:text-white transition-colors inline-block text-lg"
+                  >
+                    {link.label}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Courses</h4>
-            <ul className="space-y-2">
-              {[
-                'Manual Testing',
-                'Automation Testing',
-                'JIRA Training',
-                'Selenium with Java',
-                'Corporate Training'
-              ].map((course) => (
-                <li key={course}>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <h4 className="text-xl font-semibold mb-6">Courses</h4>
+            <ul className="space-y-4">
+              {courses.map((course, index) => (
+                <li key={index}>
+                  <a 
+                    href="#"
+                    className="text-gray-300 hover:text-white transition-colors inline-block text-lg"
+                  >
                     {course}
                   </a>
                 </li>
@@ -46,27 +69,23 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
+            <h4 className="text-xl font-semibold mb-6">Connect With Us</h4>
             <div className="flex space-x-4">
-              {[
-                { icon: <Facebook size={20} />, href: "#" },
-                { icon: <Twitter size={20} />, href: "#" },
-                { icon: <Linkedin size={20} />, href: "#" },
-                { icon: <Instagram size={20} />, href: "#" }
-              ].map((social, index) => (
+              {socials.map((social, index) => (
                 <a
                   key={index}
                   href={social.href}
-                  className="bg-gray-800 p-2 rounded-full hover:bg-gray-700 transition-colors"
+                  className="bg-gray-800/50 p-3 rounded-full hover:bg-gray-700 transition-colors hover:scale-110 transform"
+                  aria-label={social.label}
                 >
-                  {social.icon}
+                  <social.icon size={24} />
                 </a>
               ))}
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>© {currentYear} TechyGuru Academy. All rights reserved.</p>
+        <div className="border-t border-gray-800 pt-8 text-center">
+          <p className="text-gray-400 text-lg">© {currentYear} TechyGuru Academy. All rights reserved.</p>
         </div>
       </div>
     </footer>

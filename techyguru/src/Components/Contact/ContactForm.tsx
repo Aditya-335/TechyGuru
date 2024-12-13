@@ -1,6 +1,7 @@
 import React from 'react';
 import { Input } from '../ui/Input';
 import { TextArea } from '../ui/TextArea';
+import { ArrowRight } from 'lucide-react';
 
 export const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -34,9 +35,10 @@ export const ContactForm = () => {
       />
       <button
         type="submit"
-        className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg hover:opacity-90 transition-opacity"
+        className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition-all hover:scale-105 flex items-center justify-center gap-2 group"
       >
         Send Message
+        <ArrowRight className="group-hover:translate-x-1 transition-transform" />
       </button>
     </form>
   );
