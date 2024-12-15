@@ -7,7 +7,7 @@ const Services = () => {
     {
       icon: <TestTube size={32} />,
       title: "Manual Testing",
-      description: "Master manual testing concepts with hands-on experience in JIRA and SPIRATEST. Learn test planning, execution, and defect management."
+      description: "Master manual testing concepts with hands-on experience in JIRA and SPIRATEST."
     },
     {
       icon: <Code2 size={32} />,

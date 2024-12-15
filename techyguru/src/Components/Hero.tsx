@@ -8,6 +8,8 @@ const Hero = () => {
     { icon: <Code2 size={32} />, label: "Automation Testing" },
     { icon: <Users size={32} />, label: "Corporate Training" }
   ];
+  const size = Math.random() * 70 + 96;
+
 
   return (
     <section 
@@ -15,21 +17,27 @@ const Hero = () => {
       className="min-h-screen relative overflow-hidden flex items-center justify-center py-20 px-4"
     >
       {/* Animated background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 animate-gradient opacity-50 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-300 to-pink-400 animate-gradient opacity-50 z-0"></div>
       
       {/* Floating shapes */}
       <div className="absolute inset-0 overflow-hidden z-0">
-        {[...Array(3)].map((_, i) => (
+        {[...Array(15)].map((_, i) => (
           <div
             key={i}
             className="absolute animate-float hidden md:block"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animationDelay: `${i * 2}s`,
+              animationDelay: `${Math.random() * 2}s`,
+              animationDuration:`${Math.random() * 4 + 2}s`,
             }}
           >
-            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-400 to-purple-400 opacity-10"></div>
+            <div className=" rounded-full bg-gradient-to-br from-blue-400 to-purple-400 opacity-10 "
+                style={{
+                width: `${size}px`,
+                height: `${size}px`,
+              }}>
+            </div>
           </div>
         ))}
       </div>
@@ -55,7 +63,7 @@ const Hero = () => {
               <ArrowRight className="group-hover:translate-x-1 transition-transform w-5 h-5 sm:w-6 sm:h-6" />
             </button>
             <button className="text-base sm:text-lg border-2 border-purple-600 text-purple-600 px-6 sm:px-10 py-3 sm:py-5 rounded-full hover:bg-purple-50 transition-all hover:scale-105 w-full sm:w-auto">
-              View Courses
+              Learn More
             </button>
           </div>
         </div>
