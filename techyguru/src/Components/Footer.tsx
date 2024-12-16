@@ -22,8 +22,7 @@ const Footer = () => {
 
   const socials = [
     { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61570153401488&mibextid=ZbWKwL', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+
     { icon: Instagram, href: 'https://www.instagram.com/techyguruacademy/profilecard/?igsh=b2Rkc2E4czIzc3F6', label: 'Instagram' }
   ];
 

@@ -9,6 +9,7 @@ import AutomationTesting from './pages/AutomationTesting';
 import CorporateTraining from './pages/CorporateTraining';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Footer from './Components/Footer';
+import Enroll from './pages/Enroll';
 
 function App() {
   return (
@@ -21,15 +22,18 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/testimonials" element={<Testimonials />} />
-          
           {/* Services Routes */}
           <Route path="/services/manual-testing" element={<ManualTesting />} />
           <Route path="/services/automation-testing" element={<AutomationTesting />} />
           <Route path="/services/corporate-training" element={<CorporateTraining />} />
+          {/*Enroll Path*/}
+          <Route path="/enroll" element={<Enroll />} />
+
+
         </Routes>
       </div>
     </Router>
-    
+      
       <Footer />
     </div>
   );

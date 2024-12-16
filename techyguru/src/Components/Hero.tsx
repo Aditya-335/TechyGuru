@@ -1,8 +1,10 @@
 import React from 'react';
 import { ArrowRight, Code2, TestTube, Users } from 'lucide-react';
 import { FeatureIcon } from './ui/FeatureIcon';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
   const features = [
     { icon: <TestTube size={32} />, label: "Manual Testing" },
     { icon: <Code2 size={32} />, label: "Automation Testing" },
@@ -10,8 +12,13 @@ const Hero = () => {
   ];
   const size = Math.random() * 70 + 96;
 
+  const handleNavigation = (path: string) => {
+    navigate(path);
+  };
+
 
   return (
+    
     <section 
       id="home" 
       className="min-h-screen relative overflow-hidden flex items-center justify-center py-20 px-4"
@@ -58,11 +65,15 @@ const Hero = () => {
             Automation Testing, and more.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-8 md:mb-12 opacity-0 animate-slide-up" style={{ animationDelay: '0.6s' }}>
-            <button className="text-base sm:text-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 sm:px-10 py-3 sm:py-5 rounded-full hover:opacity-90 transition-all hover:scale-105 flex items-center justify-center gap-2 group w-full sm:w-auto">
+            <button
+            onClick={() => handleNavigation('/enroll')}
+             className="text-base sm:text-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 sm:px-10 py-3 sm:py-5 rounded-full hover:opacity-90 transition-all hover:scale-105 flex items-center justify-center gap-2 group w-full sm:w-auto">
               Get Started
               <ArrowRight className="group-hover:translate-x-1 transition-transform w-5 h-5 sm:w-6 sm:h-6" />
             </button>
-            <button className="text-base sm:text-lg border-2 border-purple-600 text-purple-600 px-6 sm:px-10 py-3 sm:py-5 rounded-full hover:bg-purple-50 transition-all hover:scale-105 w-full sm:w-auto">
+            <button 
+            onClick={() => handleNavigation('/about')}
+            className="text-base sm:text-lg border-2 border-purple-600 text-purple-600 px-6 sm:px-10 py-3 sm:py-5 rounded-full hover:bg-purple-50 transition-all hover:scale-105 w-full sm:w-auto">
               Learn More
             </button>
           </div>
