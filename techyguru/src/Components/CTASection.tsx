@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface CTASectionProps {
   title: string;
@@ -61,10 +62,10 @@ const CTASection: React.FC<CTASectionProps> = ({
           )}
 
           <div className="flex flex-col sm:flex-row justify-center gap-6 opacity-0 animate-slide-up" style={{ animationDelay: '0.6s' }}>
-            <button className="bg-white text-purple-900 px-8 py-4 rounded-full text-xl font-semibold hover:bg-gray-100 transition-all hover:scale-105 flex items-center justify-center gap-2 group">
+            <Link to='/enroll'><button className="bg-white text-purple-900 px-8 py-4 rounded-full text-xl font-semibold hover:bg-gray-100 transition-all hover:scale-105 flex items-center justify-center gap-2 group">
               Start Your Journey
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            </button></Link>
            
           </div>
         </div>

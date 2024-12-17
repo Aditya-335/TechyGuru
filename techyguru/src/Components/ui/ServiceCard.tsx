@@ -1,13 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface ServiceCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
+  link: string; // Add link property
   index: number;
 }
 
-export const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, index }) => (
+export const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, link, index }) => (
   <div 
     className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-105 opacity-0 animate-slide-up"
     style={{ animationDelay: `${0.2 * index}s` }}
@@ -17,9 +19,11 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, descripti
     </div>
     <h3 className="text-3xl font-semibold mb-4">{title}</h3>
     <p className="text-lg text-gray-600 mb-6 leading-relaxed">{description}</p>
-    <button className="text-lg text-purple-600 font-semibold hover:text-purple-700 transition-colors group flex items-center gap-2">
-      Learn More 
-      <span className="group-hover:translate-x-1 transition-transform">→</span>
-    </button>
+    <Link to={link}>
+      <button className="text-lg text-purple-600 font-semibold hover:text-purple-700 transition-colors group flex items-center gap-2">
+        Learn More
+        <span className="group-hover:translate-x-1 transition-transform">→</span>
+      </button>
+    </Link>
   </div>
 );
