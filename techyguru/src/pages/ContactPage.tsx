@@ -64,7 +64,7 @@ const Contact = () => {
                 ))}
               </div>
 
-              <div className="mt-12">
+              {/* <div className="mt-12">
                 <h3 className="text-2xl font-bold mb-6">Follow Us</h3>
                 <div className="flex space-x-4">
                   {['Facebook', 'Twitter', 'LinkedIn', 'Instagram'].map((social, index) => (
@@ -77,7 +77,7 @@ const Contact = () => {
                     </a>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">

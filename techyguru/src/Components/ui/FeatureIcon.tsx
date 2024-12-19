@@ -11,6 +11,6 @@ export const FeatureIcon: React.FC<FeatureIconProps> = ({ icon, label, index }) 
     <div className="w-16 h-16 bg-white/30 backdrop-blur-sm rounded-2xl flex items-center justify-center text-purple-600 mb-4 animate-pulse-glow">
       {icon}
     </div>
-    <span className="text-gray-700 font-medium">{label}</span>
+    <span className="text-gray-700 font-medium">{}</span>
   </div>
 );

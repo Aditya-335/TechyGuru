@@ -93,7 +93,6 @@ const ManualTesting = () => {
       <CTASection 
         title="Start Your Manual Testing Journey Today"
         description="Join our comprehensive manual testing program and become a certified testing professional"
-        buttonText="Enroll Now"
       />
     </div>
   );
