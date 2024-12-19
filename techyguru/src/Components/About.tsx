@@ -26,7 +26,7 @@ const About = () => {
     >
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-          <div className="order-2 md:order-1">
+          <div className="order-2 md:order-1 ">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 md:mb-8 text-center md:text-left">
               Why Choose TechyGuru Academy?
             </h2>
