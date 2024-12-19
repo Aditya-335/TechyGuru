@@ -1,7 +1,7 @@
 export const footerData = {
     quickLinks: [
       { label: 'Home', href: '#home' },
-      { label: 'About', href: '#about' },
+      { label: 'About', href: '/about' },
       { label: 'Services', href: '#services' },
       { label: 'Testimonials', href: '#testimonials' },
       { label: 'Contact', href: '#contact' }
@@ -9,8 +9,6 @@ export const footerData = {
     courses: [
       'Manual Testing',
       'Automation Testing',
-      'JIRA Training',
-      'Selenium with Java',
       'Corporate Training'
     ],
     socials: [

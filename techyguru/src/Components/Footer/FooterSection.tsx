@@ -14,7 +14,7 @@ const FooterSection = () => {
           <div>
             <h3 className="text-2xl font-bold mb-6">TechyGuru Academy</h3>
             <p className="text-gray-300 leading-relaxed">
-              Empowering the next generation of software testing professionals through
+              Empowering the next generation of software professionals through
               comprehensive training and hands-on experience.
             </p>
           </div>
