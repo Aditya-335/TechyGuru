@@ -11,7 +11,7 @@ interface ServiceCardProps {
 
 export const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, link, index }) => (
   <div 
-    className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-105 opacity-0 animate-slide-up text-left sm:text-left text-center"
+    className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-105 opacity-0 animate-slide-up flex flex-col items-center text-center"
     style={{ animationDelay: `${0.2 * index}s` }}
   >
     <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center text-white mb-6 animate-pulse-glow mx-auto sm:mx-0">

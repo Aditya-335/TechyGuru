@@ -6,18 +6,16 @@ const Footer = () => {
 
   const quickLinks = [
     { label: 'Home', href: '#home' },
-    { label: 'About', href: '#about' },
+    { label: 'About', href: '/about' },
     { label: 'Services', href: '#services' },
     { label: 'Testimonials', href: '#testimonials' },
-    { label: 'Contact', href: '#contact' }
+    { label: 'Contact', href: '/contact' }
   ];
 
   const courses = [
-    'Manual Testing',
-    'Automation Testing',
-    'JIRA Training',
-    'Selenium with Java',
-    'Corporate Training'
+    { label: 'Manual Testing', href: '/services/manual-testing' },
+    { label: 'Automation Testing', href: '/services/automation-testing' },
+    { label: 'Corporate Training', href: '/services/corporate-training' },
   ];
 
   const socials = [
@@ -58,10 +56,10 @@ const Footer = () => {
               {courses.map((course, index) => (
                 <li key={index}>
                   <a 
-                    href="#"
+                    href={course.href}
                     className="text-gray-300 hover:text-white transition-colors inline-block text-lg"
                   >
-                    {course}
+                    {course.label}
                   </a>
                 </li>
               ))}

@@ -7,27 +7,27 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      content: "info@techyguru.academy",
+      content: "techyguruacademy@gmail.com",
       description: "We'll respond within 24 hours"
     },
     {
       icon: Phone,
       title: "Call Us",
-      content: "+1 (555) 123-4567",
-      description: "Mon-Fri from 9am to 6pm"
+      content: "+91 74200 09855",
+      description: "Give us a call for a fast response"
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      content: "123 Tech Street, Silicon Valley",
-      description: "CA 94025, United States"
+      content: "BT Kawade Rd, Dombi Wadi, Ghorpadi, Pune, Maharashtra",
+      description: "411001, India"
     },
-    {
-      icon: Clock,
-      title: "Working Hours",
-      content: "Monday to Friday",
-      description: "9:00 AM - 6:00 PM"
-    }
+    // {
+    //   icon: Clock,
+    //   title: "Working Hours",
+    //   content: "Monday to Friday",
+    //   description: "9:00 AM - 6:00 PM"
+    // }
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -109,12 +109,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Subject
+                    Phone
                   </label>
                   <input
-                    type="text"
+                    type="tel"
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none transition-all"
-                    placeholder="How can we help?"
+                    placeholder="+91 74200 09855"
                     required
                   />
                 </div>

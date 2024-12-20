@@ -55,7 +55,7 @@ const Hero = () => {
             style={{ animationDelay: '0.2s' }}
           >
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Master Software Testing
+              Master Software Engineering
             </span>
             <br />
             <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl block mt-2">

@@ -50,7 +50,7 @@ const Enroll = () => {
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slide-up">Begin Your Journey</h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Take the first step towards becoming a software testing professional
+            Take the first step towards becoming a software engineering professional
           </p>
         </div>
       </section>
