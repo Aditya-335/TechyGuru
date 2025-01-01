@@ -23,7 +23,8 @@ const sendMail = async (req) => {
             gender,
             dob,
             city,
-            referralSource
+            referralSource,
+            Message
           } = req.body;
 
         // Send response first
@@ -44,6 +45,7 @@ const sendMail = async (req) => {
                 \tDOB: ${dob}\n
                 \tCity: ${city}\n
                 \tReferral Source: ${referralSource}\n
+                \tMessage: ${Message}\n
                 ]`,
             html: `<div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
                     <h3 style="color: #007BFF;">New Lead Information</h3>
@@ -51,6 +53,7 @@ const sendMail = async (req) => {
                     <p><strong>Email:</strong> ${email}</p>
                     <p><strong>Phone:</strong> ${phone}</p>
                     <p><strong>Course Interested:</strong> ${courseInterest}</p>
+                    <p><strong>Message:</strong> ${Message}</p>
                     
                     <h4 style="margin-top: 1em; color: #555;">Additional Information:</h4>
                     <ul style="list-style-type: none; padding-left: 0;">
@@ -58,6 +61,7 @@ const sendMail = async (req) => {
                         <li><strong>DOB:</strong> ${dob}</li>
                         <li><strong>City:</strong> ${city}</li>
                         <li><strong>Referral Source:</strong> ${referralSource}</li>
+                        
                     </ul>
                     </div>`
         };

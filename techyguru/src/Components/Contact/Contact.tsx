@@ -1,6 +1,7 @@
-import React from 'react';
+
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { ContactForm } from './ContactForm';
+
 
 const Contact = () => {
   const contactInfo = [
@@ -20,6 +21,8 @@ const Contact = () => {
       content: "123 Tech Street, Silicon Valley, CA"
     }
   ];
+
+
 
   return (
     <section id="contact" className="py-20 bg-white">

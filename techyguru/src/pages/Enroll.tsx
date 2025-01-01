@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Calendar, MapPin, User, Mail, Phone, BookOpen, Info } from 'lucide-react';
+import axios from 'axios';
 
 const courses = [
   "Manual Testing with JIRA",
@@ -17,7 +18,7 @@ const referralSources = [
   "Other"
 ];
 
-const Enroll = () => {
+const Enroll : React.FC = () => {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -29,11 +30,45 @@ const Enroll = () => {
     referralSource: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  
+  const [loading, setLoading] = useState(false); // Track loading state
+  const [responseMessage, setResponseMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+    setLoading(true); // Set loading to true when submission starts
+    setResponseMessage('');
+    setErrorMessage('');
+
+    try {
+      console.log('Submitting form data:', formData);
+      const response = await axios.post('http://localhost:5000/enroll', formData);
+      console.log('Server response:', response.data);
+      setResponseMessage(response.data.message);
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        courseInterest: '',
+        gender: '',
+        dob: '',
+        city: '',
+        referralSource: ''
+      })
+    } catch (error: unknown) {
+      // Type the error explicitly
+      if (axios.isAxiosError(error) && error.response) {
+        setErrorMessage(error.response.data?.message || 'An error occurred');
+      } else {
+        setErrorMessage('An unexpected error occurred');
+      }
+      console.error('Error occurred:', error);
+    } finally {
+      setLoading(false); // Reset loading state when submission finishes
+    }
   };
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({
@@ -214,13 +249,29 @@ const Enroll = () => {
             <div className="pt-6">
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition-all hover:scale-105 flex items-center justify-center gap-2 group"
+                className={`w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all flex items-center justify-center gap-2 group ${
+                  loading
+                    ? 'opacity-70 cursor-not-allowed' // Apply this when loading is true
+                    : 'hover:opacity-90 hover:scale-105' // Apply this when loading is false
+                }`}
+                disabled={loading}
               >
-                Submit Application
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                {loading ? (
+                    <span>
+                      <span className="spinner"></span> Submitting...
+                    </span>
+                  ) : (
+                    <div className="flex items-center space-x-2">
+                    Submit Application<ArrowRight className="group-hover:translate-x-1 transition-transform"  />
+                    </div>
+                  )}
+                
+                
               </button>
             </div>
           </form>
+          {responseMessage && <p style={{ color: 'green' }}>{responseMessage}</p>}
+          {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
         </div>
       </section>
     </div>
