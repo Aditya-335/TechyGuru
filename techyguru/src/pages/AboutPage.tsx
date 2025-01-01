@@ -1,56 +1,62 @@
-import React from 'react';
-import { Award, Users, BookOpen, Trophy, Target, Star } from 'lucide-react';
-import { ServiceHero } from '../Components/service/ServiceHero';
+import React from "react";
+import { Award, Users, BookOpen, Trophy, Target, Star } from "lucide-react";
+import { ServiceHero } from "../Components/service/ServiceHero";
 
 const About = () => {
   const stats = [
     { icon: Users, value: "1000+", label: "Students Trained" },
-    { icon: BookOpen, value: "15+", label: "Courses" },
+    { icon: BookOpen, value: "200+", label: "Hours of Training" },
     { icon: Trophy, value: "98%", label: "Success Rate" },
-    { icon: Award, value: "50+", label: "Corporate Clients" }
+    { icon: Award, value: "50+", label: "Corporate Clients" },
   ];
 
   const values = [
     {
       title: "Excellence",
-      description: "We strive for excellence in every aspect of our training programs, ensuring the highest quality education."
+      description:
+        "We strive for excellence in every aspect of our training programs, ensuring the highest quality education.",
     },
     {
       title: "Innovation",
-      description: "Continuously updating our curriculum to keep pace with the latest industry trends and technologies."
+      description:
+        "Continuously updating our curriculum to keep pace with the latest industry trends and technologies.",
     },
     {
       title: "Student Success",
-      description: "Dedicated to helping our students achieve their career goals through comprehensive support."
-    }
+      description:
+        "Dedicated to helping our students achieve their career goals through comprehensive support.",
+    },
   ];
 
   const team = [
     {
       name: "John Smith",
       role: "Lead Instructor",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400",
-      experience: "15+ years in Software Testing"
+      image:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400",
+      experience: "15+ years in Software Testing",
     },
     {
       name: "Sarah Johnson",
       role: "Automation Expert",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400",
-      experience: "10+ years in Test Automation"
+      image:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400",
+      experience: "10+ years in Test Automation",
     },
     {
       name: "Michael Chen",
       role: "JIRA Specialist",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400",
-      experience: "8+ years in Test Management"
-    }
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400",
+      experience: "8+ years in Test Management",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-white">
-      <ServiceHero 
+      <ServiceHero
         title="About TechyGuru Academy"
-        description="Empowering the next generation of software testing professionals"
+        description="Empowering the next generation of software engineering professionals"
         image="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200"
       />
 
@@ -60,18 +66,21 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6">Our Mission</h2>
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                At TechyGuru Academy, we're dedicated to transforming aspiring testers into 
-                industry-ready professionals. Our comprehensive curriculum, hands-on projects, 
-                and expert instructors ensure you're well-prepared for real-world challenges.
+                At TechyGuru Academy, we're dedicated to transforming aspiring developers and
+                testers into industry-ready professionals. Our comprehensive
+                curriculum, hands-on projects, and expert instructors ensure
+                you're well-prepared for real-world challenges.
               </p>
               <div className="grid grid-cols-2 gap-8">
                 {stats.map((stat, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl transform hover:scale-105 transition-all"
                   >
                     <stat.icon className="text-purple-600 mb-4" size={32} />
-                    <div className="text-3xl font-bold text-gray-800 mb-2">{stat.value}</div>
+                    <div className="text-3xl font-bold text-gray-800 mb-2">
+                      {stat.value}
+                    </div>
                     <div className="text-gray-600">{stat.label}</div>
                   </div>
                 ))}
@@ -79,7 +88,7 @@ const About = () => {
             </div>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl transform rotate-3"></div>
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800"
                 alt="Team collaboration"
                 className="rounded-3xl shadow-xl relative z-10"
@@ -99,9 +108,9 @@ const About = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {values.map((value, index) => (
-              <div 
+              <div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:scale-105 flex flex-col items-center text-center"
               >
                 <Star className="text-purple-600 mb-6" size={40} />
                 <h3 className="text-2xl font-semibold mb-4">{value.title}</h3>

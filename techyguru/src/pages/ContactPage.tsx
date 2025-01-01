@@ -8,27 +8,27 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      content: "info@techyguru.academy",
-      description: "We'll respond within 24 hours",
+      content: "techyguruacademy@gmail.com",
+      description: "We'll respond within 24 hours"
     },
     {
       icon: Phone,
       title: "Call Us",
-      content: "+1 (555) 123-4567",
-      description: "Mon-Fri from 9am to 6pm",
+      content: "+91 74200 09855",
+      description: "Give us a call for a fast response"
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      content: "123 Tech Street, Silicon Valley",
-      description: "CA 94025, United States",
+      content: "BT Kawade Rd, Dombi Wadi, Ghorpadi, Pune, Maharashtra",
+      description: "411001, India"
     },
-    {
-      icon: Clock,
-      title: "Working Hours",
-      content: "Monday to Friday",
-      description: "9:00 AM - 6:00 PM",
-    },
+    // {
+    //   icon: Clock,
+    //   title: "Working Hours",
+    //   content: "Monday to Friday",
+    //   description: "9:00 AM - 6:00 PM"
+    // }
   ];
  
 
@@ -64,7 +64,7 @@ const Contact = () => {
                 ))}
               </div>
 
-              <div className="mt-12">
+              {/* <div className="mt-12">
                 <h3 className="text-2xl font-bold mb-6">Follow Us</h3>
                 <div className="flex space-x-4">
                   {["Facebook", "Twitter", "LinkedIn", "Instagram"].map(
@@ -79,7 +79,7 @@ const Contact = () => {
                     )
                   )}
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
@@ -99,14 +99,16 @@ const Contact = () => {
             </p>
           </div>
           <div className="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-xl">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.6282365564086!2d-122.08374688469227!3d37.42199987982362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1sen!2sus!4v1623164185539!5m2!1sen!2sus"
-              width="100%"
-              height="500"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.676379408727!2d73.9041669!3d18.5178149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1beadaa7d45%3A0x65b9ce17e2bd98b6!2sBhagwan%20Tatyasaheb%20Kawade%20Rd%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1702831500000!5m2!1sen!2sin" 
+            width="100%" 
+            height="500" 
+            style={{border: 0}}
+            allowFullScreen
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade">
+          </iframe>
+
           </div>
         </div>
       </section>

@@ -83,9 +83,9 @@ const Enroll : React.FC = () => {
       <section className="h-[40vh] relative flex items-center justify-center bg-gradient-to-br from-purple-900 to-blue-900 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/90 to-blue-900/90"></div>
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-slide-up">Begin Your Journey</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slide-up">Begin Your Journey</h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Take the first step towards becoming a software testing professional
+            Take the first step towards becoming a software engineering professional
           </p>
         </div>
       </section>

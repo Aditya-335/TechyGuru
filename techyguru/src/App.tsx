@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutPage';
 import ContactUs from './pages/ContactPage';
 import ManualTesting from './pages/ManualTesting';
+import ScrollToTop from './Components/ScrollingWidget/ScrollToTop';
 import AutomationTesting from './pages/AutomationTesting';
 import CorporateTraining from './pages/CorporateTraining';
 import Testimonials from './Components/Testimonials/Testimonials';
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
        <Router>
+        <ScrollToTop/>
       <div className="App">
         <Navbar />
         <Routes>

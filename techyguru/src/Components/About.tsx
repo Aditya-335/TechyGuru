@@ -6,7 +6,7 @@ import { BulletPoint } from './ui/BulletPoint';
 const About = () => {
   const stats = [
     { icon: <Users size={28} />, value: "1000+", label: "Students Trained" },
-    { icon: <BookOpen size={28} />, value: "15+", label: "Courses" },
+    { icon: <BookOpen size={28} />, value: "200+", label: "Hours of Training" },
     { icon: <Trophy size={28} />, value: "98%", label: "Success Rate" },
     { icon: <Award size={28} />, value: "50+", label: "Corporate Clients" }
   ];
@@ -26,12 +26,12 @@ const About = () => {
     >
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-          <div className="order-2 md:order-1">
+          <div className="order-2 md:order-1 ">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 md:mb-8 text-center md:text-left">
               Why Choose TechyGuru Academy?
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 md:mb-8 text-center md:text-left leading-relaxed">
-              At TechyGuru Academy, we're dedicated to transforming aspiring testers into 
+              At TechyGuru Academy, we're dedicated to transforming aspiring developers and testers into 
               industry-ready professionals. Our comprehensive curriculum, hands-on projects, 
               and expert instructors ensure you're well-prepared for real-world challenges.
             </p>

@@ -8,17 +8,17 @@ const Contact = () => {
     {
       icon: <Mail className="text-purple-600" />,
       title: "Email",
-      content: "info@techyguru.academy"
+      content: "techyguruacademy@gmail.com"
     },
     {
       icon: <Phone className="text-purple-600" />,
       title: "Phone",
-      content: "+1 (555) 123-4567"
+      content: "+91 74200 09855"
     },
     {
       icon: <MapPin className="text-purple-600" />,
       title: "Location",
-      content: "123 Tech Street, Silicon Valley, CA"
+      content: "BT Kawade Rd, Dombi Wadi, Ghorpadi, Pune, Maharashtra"
     }
   ];
 

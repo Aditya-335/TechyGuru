@@ -7,17 +7,20 @@ const Services = () => {
     {
       icon: <TestTube size={32} />,
       title: "Manual Testing",
-      description: "Master manual testing concepts with hands-on experience in JIRA and SPIRATEST."
+      description: "Master manual testing concepts with hands-on experience in JIRA and SPIRATEST.",
+      link: "/services/manual-testing" // Add respective route
     },
     {
       icon: <Code2 size={32} />,
       title: "Automation Testing",
-      description: "Learn Selenium with Java, including test automation frameworks, CI/CD integration, and best practices for automated testing."
+      description: "Learn Selenium with Java, including test automation frameworks, CI/CD integration, and best practices for automated testing.",
+      link: "/services/automation-testing" // Add respective route
     },
     {
       icon: <Users size={32} />,
       title: "Corporate Training",
-      description: "Customized training programs for organizations to upskill their testing teams with the latest tools and methodologies."
+      description: "Customized training programs for organizations to upskill their testing teams with the latest tools and methodologies.",
+      link: "/services/corporate-training" // Add respective route
     }
   ];
 
