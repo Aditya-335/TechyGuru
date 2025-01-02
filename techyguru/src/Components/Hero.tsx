@@ -1,7 +1,6 @@
-import React from 'react';
 import { ArrowRight, Code2, TestTube, Users } from 'lucide-react';
 import { FeatureIcon } from './ui/FeatureIcon';
-import { Link, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 const Hero = () => {
   const navigate = useNavigate();

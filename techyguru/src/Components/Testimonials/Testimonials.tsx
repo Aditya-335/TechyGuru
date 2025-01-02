@@ -1,25 +1,27 @@
-import React from 'react';
 import { TestimonialCard } from './TestimonialCard';
 
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "John Doe",
-      role: "QA Engineer at abc",
+      index:1,
+      name: "Sneha Singh",
+      role: "QA Engineer at tcs",
       // image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150",
       content: "The Selenium automation course was exactly what I needed to advance my career. The hands-on projects and mentorship were invaluable.",
       rating: 5
     },
     {
-      name: "John Doe",
-      role: "Test Lead at xyz",
+      index:2,
+      name: "Omkar Patil",
+      role: "Test Lead at wipro",
       // image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150",
       content: "TechyGuru's manual testing course helped me understand the fundamentals thoroughly. Their JIRA and SPIRATEST training is top-notch.",
       rating: 5
     },
     {
-      name: "John Doe",
-      role: "QA Analyst at knm",
+      index:3,
+      name: "Rakesh Sharma",
+      role: "QA Analyst at Infosys",
       // image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150",
       content: "The corporate training program transformed our testing team. The customized curriculum addressed our specific needs perfectly.",
       rating: 5

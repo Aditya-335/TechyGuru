@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code2, TestTube, Users } from 'lucide-react';
 import { ServiceCard } from './ui/ServiceCard';
 
@@ -18,8 +17,8 @@ const Services = () => {
     },
     {
       icon: <Users size={32} />,
-      title: "Corporate Training",
-      description: "Customized training programs for organizations to upskill their testing teams with the latest tools and methodologies.",
+      title: "Web Development and Analytics",  
+      description: "Building web applications and providing actionable insights.",  
       link: "/services/corporate-training" // Add respective route
     }
   ];

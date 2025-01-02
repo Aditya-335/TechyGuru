@@ -1,14 +1,14 @@
 // src/components/Navbar.tsx
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X, ChevronDown, ChevronUp } from 'lucide-react';
 import logo from '../assets/logo1.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement | null>(null); // Type the ref
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
-  const dropdownRef = useRef(null);
   const navigate = useNavigate();
 
   // Close dropdown if clicked outside
@@ -88,7 +88,7 @@ const Navbar = () => {
                     onClick={() => handleNavigation('/services/corporate-training')}
                     className="block px-4 py-2 text-gray-700 bg-slate-50 hover:bg-gray-100 hover:text-purple-600 cursor-pointer"
                   >
-                    Corporate Training
+                    Web Development & Analytics
                   </div>
                 </div>
               )}
@@ -154,7 +154,7 @@ const Navbar = () => {
                     onClick={() => handleNavigation('/services/corporate-training')}
                     className="block px-3 py-2 text-gray-700 hover:text-purple-600 cursor-pointer"
                   >
-                    Corporate Training
+                    Web Development & Analytics
                   </div>
                 </div>
               )}
