@@ -1,5 +1,4 @@
-import React from 'react';
-import { TestTube, CheckCircle, BookOpen, Users, Award, FileCheck } from 'lucide-react';
+import { TestTube, CheckCircle, Users } from 'lucide-react';
 import { ServiceHero } from '../Components/service/ServiceHero';
 import { CourseModule } from '../Components/service/CourseModule';
 import { FeatureCard } from '../Components/service/FeatureCard';
@@ -93,6 +92,7 @@ const ManualTesting = () => {
       <CTASection 
         title="Start Your Manual Testing Journey Today"
         description="Join our comprehensive manual testing program and become a certified testing professional"
+        buttonText="Start Learning"
       />
     </div>
   );

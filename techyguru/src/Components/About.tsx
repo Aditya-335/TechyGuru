@@ -1,4 +1,3 @@
-import React from 'react';
 import { Award, Users, BookOpen, Trophy } from 'lucide-react';
 import { StatCard } from './ui/StatCard';
 import { BulletPoint } from './ui/BulletPoint';

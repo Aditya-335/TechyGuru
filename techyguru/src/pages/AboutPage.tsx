@@ -1,5 +1,4 @@
-import React from "react";
-import { Award, Users, BookOpen, Trophy, Target, Star } from "lucide-react";
+import { Award, Users, BookOpen, Trophy, Star } from "lucide-react";
 import { ServiceHero } from "../Components/service/ServiceHero";
 
 const About = () => {
@@ -28,30 +27,7 @@ const About = () => {
     },
   ];
 
-  const team = [
-    {
-      name: "John Smith",
-      role: "Lead Instructor",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400",
-      experience: "15+ years in Software Testing",
-    },
-    {
-      name: "Sarah Johnson",
-      role: "Automation Expert",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400",
-      experience: "10+ years in Test Automation",
-    },
-    {
-      name: "Michael Chen",
-      role: "JIRA Specialist",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400",
-      experience: "8+ years in Test Management",
-    },
-  ];
-
+  
   return (
     <div className="min-h-screen bg-white">
       <ServiceHero

@@ -1,5 +1,4 @@
-import React from 'react';
-import { Code2, Cpu, GitBranch, Terminal, Database, Workflow } from 'lucide-react';
+import { Code2, GitBranch, Terminal,  } from 'lucide-react';
 import { ServiceHero } from '../Components/service/ServiceHero';
 import { CourseModule } from '../Components/service/CourseModule';
 import { FeatureCard } from '../Components/service/FeatureCard';

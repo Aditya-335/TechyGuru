@@ -4,7 +4,6 @@ import { Star } from 'lucide-react';
 interface TestimonialCardProps {
   name: string;
   role: string;
-  image: string;
   content: string;
   rating: number;
   index: number;
@@ -13,7 +12,6 @@ interface TestimonialCardProps {
 export const TestimonialCard: React.FC<TestimonialCardProps> = ({
   name,
   role,
-  image,
   content,
   rating,
   index
@@ -23,11 +21,10 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
     style={{ animationDelay: `${0.2 * index}s` }}
   >
     <div className="flex items-center gap-4 mb-6">
-      <img 
-        src={image} 
+      {/* <img 
         alt={name} 
         className="w-16 h-16 rounded-full object-cover ring-2 ring-purple-100 hover:ring-purple-300 transition-all"
-      />
+      /> */}
       <div>
         <h4 className="font-semibold text-lg">{name}</h4>
         <p className="text-gray-600">{role}</p>
