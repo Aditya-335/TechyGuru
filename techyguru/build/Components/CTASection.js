@@ -1,0 +1,11 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { ArrowRight, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
+const CTASection = ({ title, description, stats }) => {
+    return (_jsxs("section", { className: "py-24 bg-gradient-to-br from-purple-900 to-blue-900 relative overflow-hidden", children: [_jsx("div", { className: "absolute inset-0 overflow-hidden", children: [...Array(5)].map((_, i) => (_jsx("div", { className: "absolute animate-float", style: {
+                        left: `${Math.random() * 100}%`,
+                        top: `${Math.random() * 100}%`,
+                        animationDelay: `${i * 1.5}s`,
+                    }, children: _jsx(Star, { size: 24, className: "text-white/10 transform rotate-45" }) }, i))) }), _jsx("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative", children: _jsxs("div", { className: "text-center", children: [_jsx("h2", { className: "text-5xl font-bold text-white mb-6 opacity-0 animate-slide-up", children: title }), _jsx("p", { className: "text-2xl text-gray-200 mb-12 max-w-3xl mx-auto opacity-0 animate-slide-up", style: { animationDelay: '0.2s' }, children: description }), stats && (_jsx("div", { className: "grid md:grid-cols-3 gap-8 mb-12 opacity-0 animate-slide-up", style: { animationDelay: '0.4s' }, children: stats.map((stat, index) => (_jsxs("div", { className: "bg-white/10 backdrop-blur-sm rounded-2xl p-6 transform hover:scale-105 transition-all", children: [_jsx("div", { className: "text-4xl font-bold text-white mb-2", children: stat.value }), _jsx("div", { className: "text-gray-300", children: stat.label })] }, index))) })), _jsx("div", { className: "flex flex-col items-center justify-center gap-6 sm:flex-row sm:justify-center opacity-0 animate-slide-up", style: { animationDelay: '0.6s' }, children: _jsx(Link, { to: '/enroll', children: _jsxs("button", { className: "bg-white text-purple-900 px-8 py-4 rounded-full text-xl font-semibold hover:bg-gray-100 transition-all hover:scale-105 flex items-center justify-center gap-2 group", children: ["Start Your Journey", _jsx(ArrowRight, { className: "group-hover:translate-x-1 transition-transform" })] }) }) })] }) })] }));
+};
+export default CTASection;
