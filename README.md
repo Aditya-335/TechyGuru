@@ -1,13 +1,25 @@
-# TechyGuru
+## TechyGuru
 
-TechyGuru is a web application designed for an institute that specializes in teaching software testing. The platform helps increase client reach and facilitates seamless connections between the institute and potential trainees.
+TechyGuru is a web application designed for an institute that specializes in teaching software testing. The platform enhances client reach and provides a seamless connection between the institute and potential trainees.
 
-## Features
-✅ Mobile-responsive design
-✅ Built using React for a smooth user experience
-✅ Engaging and user-friendly interface
+### Features
 
-## Live Demo
-🔗 TechyGuru Academy
+✅ Mobile-responsive design for optimal user experience across all devices
+✅ Built using React, TypeScript (TSX), and Tailwind CSS for a modern and efficient UI
+✅ Engaging and user-friendly interface for easy navigation
 
-Feel free to modify or add more details based on the project's additional features! 🚀
+### Technologies Used
+
+React – For a dynamic and interactive frontend
+TypeScript (TSX) – Ensuring type safety and better code maintainability
+Tailwind CSS – For a sleek and responsive design
+
+
+![Screenshot 2025-03-18 175420](https://github.com/user-attachments/assets/b7568b57-24d7-41aa-b3f9-fac255faeae9)
+
+
+Live Demo-
+
+https://techyguruacademy.com/
+
+This project was built for a real client who is starting his own coaching institute to train new trainees in software testing. 🚀
